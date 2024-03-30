@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import classes from "@/styles/Home.module.css";
 import {Links} from "../components/links";
 import { Main } from "../components/Main";
 
@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={`${styles.main} ${inter.className}`}>
+      <main className={`${classes.main} ${inter.className}`}>
         <Main page="index"/>
 
         <Links />
