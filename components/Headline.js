@@ -6,8 +6,7 @@ export function Headline(props) {
   return (
     <div className={styles.description}>
         <p>
-        This is&nbsp;
-        <code className={styles.code}>{props.title}</code>
+        This is {props.page} page! powered by {props.children}
         </p>
         <div>
             <a

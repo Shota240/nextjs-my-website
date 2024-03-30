@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Links } from "../components/links";
-import {Headline} from "../components/Headline";
+import { Main } from "../components/Main";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,13 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <Headline title="About page" />
-
-        <div className={styles.center}>
-          <h1 className={styles.title}>
-            This is About page!!!
-          </h1>
-        </div>
+        <Main page="about"/>
 
         <Links />
       </main>
