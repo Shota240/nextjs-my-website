@@ -1,8 +1,6 @@
 import Link from "next/link";
-// import React from "react";
-// import classes from "./Headline.module.css";
 
-export function Header(props) {
+export function Header() {
   return (
     <header>
         <Link href="/">

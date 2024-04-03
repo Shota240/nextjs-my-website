@@ -1,6 +1,6 @@
-import classes from "./Main.module.css";
+import classes from "components/Main/Main.module.css";
 import Image from "next/image";
-import {Headline} from "../components/Headline";
+import { Headline } from "components/Headline";
 
 export function Main(props) {
   return (
