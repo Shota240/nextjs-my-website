@@ -4,11 +4,16 @@ import classes from "styles/Home.module.css";
 import { Links } from "components/Links";
 import { Main } from "components/Main";
 import { Header } from "components/Header";
-
+import { useCallback } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const handleClick = useCallback((e) => {
+    e.preventDefault();
+    alert(e.target.href);
+  }, []);
+
   return (
     <>
       <Head>
@@ -17,8 +22,12 @@ export default function Home() {
       </Head>
       <Header />
 
+      <a href="/about" onClick={handleClick}>
+        ボタン
+      </a>
+
       <main className={`${classes.main} ${inter.className}`}>
-        <Main page="index"/>
+        <Main page="index" />
 
         <Links />
       </main>
