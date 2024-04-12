@@ -1,12 +1,11 @@
 import classes from "components/Links/Links.module.css";
 import ReactHtmlParser from "react-html-parser";
 
-export function Links({items, handleReduce}) {
-
+export const Links = (props) => {
   return (
     <div className={classes.grid}>
-        <button onClick={handleReduce}>減らす</button>
-      {items.map((item) => {
+        <button onClick={props.handleReduce}>減らす</button>
+      {props.items.map((item) => {
         return (
           <a
             key={item.href}

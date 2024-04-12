@@ -2,7 +2,7 @@ import classes from "components/Main/Main.module.css";
 import Image from "next/image";
 import { Headline } from "components/Headline";
 
-export function Main(props) {
+export const Main = (props) => {
   return (
     <>
       <Headline page={props.page}>

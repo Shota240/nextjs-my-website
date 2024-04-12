@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import classes from "components/Headline/Headline.module.css";
 
-export function Headline(props) {
+export const Headline = (props) => {
   return (
     <div className={classes.description}>
         <p>
